@@ -4,7 +4,7 @@
   "description": "A VS code extension to simplify debugging.",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.125.0"
+    "vscode": "^1.82.0"
   },
   "categories": [
     "Other"
@@ -16,12 +16,30 @@
       {
         "command": "debug-comments.toggle",
         "title": "Toggle Debug Comment"
+      },
+      {
+        "command": "debug-comments.toggleAllUnnamed",
+        "title": "Toggle All Unnamed Debug Comments"
+      },
+      {
+        "command": "debug-comments.toggleByName",
+        "title": "Toggle Debug Comments By Name"
       }
     ],
     "keybindings": [
       {
         "command": "debug-comments.toggle",
-        "key": "ctrl+shift+c",
+        "key": "ctrl+shift+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "debug-comments.toggleAllUnnamed",
+        "key": "ctrl+alt+j a",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "debug-comments.toggleByName",
+        "key": "ctrl+alt+j n",
         "when": "editorTextFocus"
       }
     ]
@@ -35,14 +53,14 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.125.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
-    "typescript-eslint": "^8.61.1",
+    "@types/vscode": "^1.82.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
     "eslint": "^10.5.0",
     "typescript": "^6.0.3",
-    "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0"
+    "typescript-eslint": "^8.61.1"
   },
   "overrides": {
     "diff": "^8.0.4",
