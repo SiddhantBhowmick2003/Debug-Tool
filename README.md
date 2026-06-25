@@ -43,7 +43,3 @@ This extension isn't published on the VS Code Marketplace — install it directl
 ### Supported Languages
 
 C, C++, Java, JavaScript, TypeScript, Python (comment syntax auto-detected per file).
-Copy this over your current README, commit, and push:
-bashgit add README.md
-git commit -m "Add installation instructions"
-git push
