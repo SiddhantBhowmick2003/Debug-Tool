@@ -1,10 +1,20 @@
 # Debug-Tool
-A VS code extension to simplify debugging.
-This VS code extension can be used to toggle commenting and uncommenting while debugging, very helpful while competetive coding. Following are the only features:
 
-> Use ctrl + shift + j -> to create a temporary comment or inline toggling.
-> Use ctrl + alt + j + a -> to toggle all temporary comments at once.
-> Use ctrl + alt + j + n -> to toggle all tagged comments at once.
+A VS Code extension to simplify debugging.
 
+This VS Code extension can be used to toggle commenting and uncommenting while debugging, which is very helpful during competitive coding. Following are the only features:
 
-Use naming after DBG05 to tag them with that name, example : DBG05:J1 is a temporary comment with tag J1.
+* **`Ctrl` + `Shift` + `J`**  
+  Create a temporary comment or toggle inline.
+* **`Ctrl` + `Alt` + `J` then `A`**  
+  Toggle all temporary comments at once.
+* **`Ctrl` + `Alt` + `J` then `N`**  
+  Toggle all tagged comments at once.
+
+---
+
+### Tagging Comments
+Use naming starting with `DBG05` to tag them with a specific name. 
+
+**Example:**  
+`DBG05:J1` creates a temporary comment with the tag `J1`.
